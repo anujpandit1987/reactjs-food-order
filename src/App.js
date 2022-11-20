@@ -14,6 +14,8 @@ setCartIsShown(true);
   }
   return (
     <CartProvider>
+      {cartIsShown && <div>Cart.....</div>}
+      <Header onShowCart={showCartHandler} />
       <Header />
       <main>
         <Meals />
